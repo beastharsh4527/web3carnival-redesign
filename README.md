@@ -2,7 +2,7 @@
 
 **Kalakriti 2026 · Theme 3: FinTech · Scenario 1**
 
-**Live site:** PASTE_YOUR_VERCEL_URL_HERE
+**Live site:** https://web3carnival-redesign-e6df.vercel.app/
 
 ---
 
