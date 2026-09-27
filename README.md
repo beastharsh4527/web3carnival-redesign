@@ -115,6 +115,45 @@ filters, then full archive on request.
 
 ---
 
+## Screens
+
+### Desktop
+
+#### Homepage
+![Homepage](screenshots/desktop-home.png)
+
+#### Speakers — full archive with filtering
+![Speakers](screenshots/desktop-speakers.png)
+
+#### Past editions
+![Editions](screenshots/desktop-editions.png)
+
+#### Sponsors and partners
+![Sponsors](screenshots/desktop-sponsors.png)
+
+#### Get involved
+![Get Involved](screenshots/desktop-get-involved.png)
+
+#### Demo Night
+![Demo Night](screenshots/desktop-demo-night.png)
+
+#### Awards
+![Awards](screenshots/desktop-awards.png)
+
+#### Registration flow
+![Register](screenshots/desktop-register.png)
+
+#### Why Web3 Carnival
+![Why](screenshots/desktop-why.png)
+
+### Mobile
+
+| Homepage | Speakers | Editions |
+|---|---|---|
+| ![Mobile home](screenshots/mobile-home.png) | ![Mobile speakers](screenshots/mobile-speakers.png) | ![Mobile editions](screenshots/mobile-editions.png) |
+
+---
+
 ## Accessibility
 
 Lighthouse: Accessibility 91 · Best Practices 100 · SEO 100
