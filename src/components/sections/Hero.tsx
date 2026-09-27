@@ -1,9 +1,7 @@
 import { Button } from '../ui/Button';
 import eventsData from '../../data/events.json';
-import dynamic from 'next/dynamic';
+import { HeroSpatialWrapper } from '../ui/HeroSpatialWrapper';
 import Image from 'next/image';
-
-const HeroSpatial = dynamic(() => import('../ui/HeroSpatial').then((mod) => mod.HeroSpatial), { ssr: false });
 
 export function Hero() {
   return (
@@ -12,7 +10,7 @@ export function Hero() {
       
       {/* SPATIAL BACKGROUND - Confined to right 40% on md, full screen on xl */}
       <div className="absolute inset-y-0 right-0 z-0 hidden md:block md:w-[40%] xl:w-full xl:left-0">
-        <HeroSpatial />
+        <HeroSpatialWrapper />
       </div>
       
       {/* NEAR PLANE: Content */}
