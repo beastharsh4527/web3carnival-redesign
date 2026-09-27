@@ -1,26 +1,104 @@
 @import "tailwindcss";
 
+@theme {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-text-main: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --radius-global: var(--radius);
+  --container-max-w: var(--maxw);
+  --font-display: var(--font-display);
+  --font-sans: var(--font-body);
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-base: #0A0A0C;
+  --tint-cool: #0A0B10;
+  --tint-warm: #0D0B0A;
+
+  --bg: var(--bg-base);
+  --surface: transparent;
+  --surface-2: transparent;
+  --border: rgba(255, 255, 255, 0.12);
+  --text: #F2F0EC;
+  --text-muted: #A3A0AB; /* Lightened from #8B8794 for >4.5:1 contrast */
+  --accent: #A855F7;
+  --accent-light: #C084FC;
+  --accent-grad: linear-gradient(135deg, #A855F7, #C084FC);
+
+  --fs-hero: clamp(4rem, 10vw, 9rem);
+  --fs-h1: clamp(3rem, 7vw, 6rem);
+  --fs-h2: clamp(2rem, 5vw, 4rem);
+  --fs-h3: clamp(1.5rem, 3vw, 2.5rem);
+  --fs-body: 1.125rem;
+  --fs-small: 0.875rem;
+
+  --lh-tight: 1.05;
+  --lh-body: 1.6;
+
+  --s-1: 0.5rem;
+  --s-2: 1rem;
+  --s-3: 1.5rem;
+  --s-4: 2.5rem;
+  --s-5: 4rem;
+  --s-6: 6rem;
+  --s-7: 9rem;
+
+  --radius: 0px;
+  --maxw: 1280px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur: 260ms;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body), sans-serif;
+  line-height: var(--lh-body);
 }
+
+/* Typography styles to adhere to the spec */
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: var(--font-display), sans-serif;
+  line-height: var(--lh-tight);
+}
+
+.text-hero { font-size: var(--fs-hero); font-weight: 900; letter-spacing: -0.02em; }
+.text-h1 { font-size: var(--fs-h1); font-weight: 900; letter-spacing: -0.01em; }
+.text-h2 { font-size: var(--fs-h2); font-weight: 800; letter-spacing: -0.01em; }
+.text-h3 { font-size: var(--fs-h3); font-weight: 700; }
+.text-body { font-size: var(--fs-body); font-family: var(--font-body), sans-serif; line-height: var(--lh-body); }
+.text-small { font-size: var(--fs-small); font-family: var(--font-body), sans-serif; line-height: var(--lh-body); }
+
+/* Spacing tokens mapped */
+.gap-s1 { gap: var(--s-1); }
+.gap-s2 { gap: var(--s-2); }
+.gap-s3 { gap: var(--s-3); }
+.gap-s4 { gap: var(--s-4); }
+.gap-s5 { gap: var(--s-5); }
+.gap-s6 { gap: var(--s-6); }
+
+.pt-s4 { padding-top: var(--s-4); }
+.pt-s5 { padding-top: var(--s-5); }
+.pt-s6 { padding-top: var(--s-6); }
+.pt-s7 { padding-top: var(--s-7); }
+.pb-s4 { padding-bottom: var(--s-4); }
+.pb-s5 { padding-bottom: var(--s-5); }
+.pb-s6 { padding-bottom: var(--s-6); }
+.pb-s7 { padding-bottom: var(--s-7); }
+.py-s6 { padding-top: var(--s-6); padding-bottom: var(--s-6); }
+.py-s7 { padding-top: var(--s-7); padding-bottom: var(--s-7); }
+
+.radius-global { border-radius: var(--radius); }

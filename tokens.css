@@ -1,0 +1,60 @@
+/* Web3 Carnival — design tokens
+   Colors pulled directly from their own SVG assets, not invented.
+   logo.svg           -> #020b25
+   icon1-8.svg        -> #602ea6, #c977d6
+*/
+
+:root {
+  /* base — from logo.svg */
+  --bg:            #020b25;
+  --surface:       #0a1435;
+  --surface-2:     #121d45;
+  --border:        #1e2a55;
+
+  /* text */
+  --text:          #f4f6fb;
+  --text-muted:    #9aa5c4;
+
+  /* accent — from their track icons */
+  --accent:        #602ea6;
+  --accent-light:  #c977d6;
+  --accent-grad:   linear-gradient(135deg, #602ea6, #c977d6);
+
+  /* type scale — exactly 6 steps, don't add more */
+  --fs-hero:  clamp(2.75rem, 7vw, 6rem);
+  --fs-h1:    clamp(2rem, 4.5vw, 3.5rem);
+  --fs-h2:    clamp(1.5rem, 3vw, 2.25rem);
+  --fs-h3:    1.25rem;
+  --fs-body:  1.0625rem;
+  --fs-small: 0.875rem;
+
+  --lh-tight: 1.05;
+  --lh-body:  1.6;
+
+  /* spacing */
+  --s-1: 0.5rem;  --s-2: 1rem;   --s-3: 1.5rem;
+  --s-4: 2.5rem;  --s-5: 4rem;   --s-6: 6rem;
+  --s-7: 9rem;
+
+  --radius: 4px;          /* one radius. never vary it. */
+  --maxw:   1280px;
+  --ease:   cubic-bezier(0.22, 1, 0.36, 1);
+  --dur:    260ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ACCENT DISCIPLINE
+   --accent and --accent-grad are allowed ONLY on:
+     - interactive elements (buttons, links, focus rings)
+     - the big stat numbers
+     - active filter states
+   Not on section backgrounds. Not on decorative blobs.
+   If it's everywhere it signals nothing.
+*/

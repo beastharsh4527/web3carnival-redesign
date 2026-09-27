@@ -1,0 +1,42 @@
+[
+  {
+    "Segment": "Startups",
+    "Icon File": "icon1-startups.svg",
+    "Description": "Fuel your ideas, connect with mentors, industry experts and investors and accelerate your path to success."
+  },
+  {
+    "Segment": "Web3 Enthusiasts",
+    "Icon File": "icon4-enthusiasts.svg",
+    "Description": "The perfect place for everyone passionate about the decentralised future and excited to be part of the movement."
+  },
+  {
+    "Segment": "Developers",
+    "Icon File": "icon2-developers.svg",
+    "Description": "Explore the latest technologies, connect with global leaders, find clients and expand your network."
+  },
+  {
+    "Segment": "Investors",
+    "Icon File": "icon6-investors.svg",
+    "Description": "Seek promising projects and ideas to invest in, with talent flying in from different parts of the world."
+  },
+  {
+    "Segment": "Policy Makers",
+    "Icon File": "icon5-policymakers.svg",
+    "Description": "Discover the intersection of governance and technology and the latest tech solutions for finance, healthcare and e-governance."
+  },
+  {
+    "Segment": "Enterprises",
+    "Icon File": "icon3-enterprises.svg",
+    "Description": "Explore groundbreaking solutions to transform your business in the decentralised world and network with regional authorities."
+  },
+  {
+    "Segment": "Academia and Institutions",
+    "Icon File": "icon7-academia.svg",
+    "Description": "Uncover how blockchain, crypto, and Web3 innovations are reshaping industries."
+  },
+  {
+    "Segment": "Incubators and Accelerators",
+    "Icon File": "icon8-incubators.svg",
+    "Description": "Empower startups with transformative knowledge, network with fellow catalysts, and elevate together."
+  }
+]

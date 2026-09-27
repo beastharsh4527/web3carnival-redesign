@@ -1,0 +1,30 @@
+[
+  {
+    "Track": "Blockchain & its Infrastructure Con",
+    "Description": "Discover the backbone of the decentralised world as we delve into the intricacies of blockchain technology and the foundation it sets for the Web3 era."
+  },
+  {
+    "Track": "DAO & Governance Con",
+    "Description": "Decipher the secrets of decentralised autonomous organisations (DAOs) and explore how innovative governance models are reshaping industries and communities."
+  },
+  {
+    "Track": "Metaverse & GameFi Con",
+    "Description": "Step into the realm of the Metaverse and GameFi, where virtual worlds and gaming collide to create new dimensions of immersive experiences."
+  },
+  {
+    "Track": "ZK & Security Con",
+    "Description": "Embark on a journey through zero-knowledge proofs (ZK) and security protocols, unraveling the safeguarding mechanisms that underpin Web3's trust architecture."
+  },
+  {
+    "Track": "CeFi DeFi & Staking Con",
+    "Description": "Navigate the landscape of centralised finance (CeFi) and decentralised finance (DeFi), and discover the power of staking in shaping the financial landscape of tomorrow."
+  },
+  {
+    "Track": "Enterprise Blockchain Con",
+    "Description": "Explore the transformative potential of enterprise blockchain solutions, showcasing how businesses are revolutionising processes and fostering collaboration."
+  },
+  {
+    "Track": "NFT & Utilities Con",
+    "Description": "Immerse yourself in the world of non-fungible tokens (NFTs) and utilities, where digital art, collectibles, and utility tokens converge to redefine ownership and value."
+  }
+]
